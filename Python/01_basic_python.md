@@ -44,3 +44,69 @@ math.isclose
 # 단축평가(Short Circuit Evaluation)
 T나 F인지 자동으로 판단하고 
 안봐야할 지점의 값을 반환함
+
+#Python: DAY2
+tip: 코드는 안에서부터, 오른쪽부터 분리해서 보삼
+리스트, 딕셔너리 좀 많이 씀
+메소드: 함수인데 뒤에 , /어딘가 종속되어 있는 함수
+
+# ss = {1, 2, [1, 2]} #Eorro #set에 list 안댐 #immutable만 가능
+mutable -> unhashable 
+immutable -> hashable : 1. set에 들어가기 2. dict kye 되기
+
+mutable(list, set, dict)
+immutable(tuple, range, str, int, float)
+
+##시퀀스: 순서가 있음: 리스트, 튜플, 레인지
+-객체 = 값
+
+#리스트
+-리스트의 변수명은 복수형
+-리스트 접근방법: list[위치]
+
+locations[len(locations)-1]: 총길이
+locations[-1]: 마지막 인덱스
+
+#튜플
+-하나의 항목으로 구성된 튜플은 생성 시 값 뒤에 쉼표를 붙여야 합니다.
+(1, )
+-마지막 항목에 붙은 쉼표는 생략 할 수 있습니다.
+c = (1, 2,)
+-파이썬 내부적 튜플 자동처리: ,
+-튜플단일: a = (1) #파이썬이 튜플이 아닌, 연산하는 괄호로 인지함
+- empty = ( ) 가능
+
+#range
+- 정수의 시퀀스
+- list로 형변환: list(range(9))
+
+#x, *y = [1, 2, 3] #나머지 항목들은 별 기호에 표시된 변수에 대입
+#대부분 항상 마지막 부분에 위치함, *에 몇 개를 할당해야할지 모르니까
+
+#슬라이싱
+print([1, 2, 3, 4][1:4]) #인덱스 1, 2, 3 #끝나는 인덱스 미포함
+print((1, 2, 3)[:2]): 맨처음~1까지
+print(s[::-1]): 전체뒤집기
+
+mutable: 내부 값을 바꿀 수 있는 건 리스트만 가능!
+(string, tuple, range)
+
+##비 시퀀스: 순서없음: 세트, 딕셔너리
+
+#set: {1, 2}
+#삽입, 변경, 삭제 가능, 중복값 X
+
+#dictionary: key 중복X
+.items: 키, 밸류 나옴
+d = {'a': 1, 'b': 2}
+
+#파이썬 용어
+패키지=폴더
+라이브러리 = 폴더 위에 폴더
+모듈=파일
+
+#참고 사이트:
+https://pythontutor.com/visualize.html#mode=edit
+
+
+
