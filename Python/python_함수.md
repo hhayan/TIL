@@ -8,6 +8,15 @@
 #*복사할 때 주의    
 #참조 상태(사실상 하나)  / 원본 1개, 복사본 1개 상태
 
+#복사방법: 할당 / 얕은복사 / 깊은복사
+
+1. 할당
+a = b : id값이 같음, 변수만 복사, a만 수정해도 b도 수정됌
+2. 얕은 복사
+- slice 연산자 사용: 새로운 id 할당
+- [1, 2 [3, 4]]
+3. 깊은 복사
+
 #id 컴퓨터에 저장되는 곳
 
 #함수.append : method
@@ -80,3 +89,24 @@ print(id(l1), id(l2))
 
 -.count: 원하는 값의 개수를 반환
 
+-  sort    VS   sorted
+원본변경 vs 원본 안변경
+
+- .reverse( )
+원본변경
+
+- index: 찾는값 없으면 error
+
+#set
+.update(others): datatype를 명시해야함
+ex) a.update({'사과', '바나나'})
+
+#dictionary
+.get( ): key의 value 출력, key 없으면 none, 값이 있으면 원래 값 출력
+.setdefault( ): key가 없으면 error
+
+- 키가 없을 경우
+get     VS setsefault
+값 출력 VS 키를 추가
+
+- pop: 제거하고자 하는 key가 딕셔너리에 없으면 KeyError
