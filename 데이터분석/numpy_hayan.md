@@ -81,9 +81,9 @@ np.hstack((arr2d1, arr2d2))
 3차원: matrix 두 개를 겹친다 -> tensor
 np.dstack((arr2d1, arr2d2))
 
-# 
+# 필터링 where (조건에 맞는 값 바꾸기 가능!)
 
-# uniqe
+# uniqe (count도 가능)
 *가장 큰 값 찾기 
 count
 vlaues[index]
@@ -91,57 +91,6 @@ vlaues[index]
 # 정렬 sort, argsort
 argsort 정렬하기 위한 인덱스 배치
 
-## Pandas 데이터프레임
-# series 1차원 배열(백터) with 레이블
-인덱스 지정 가능
-딕셔너리 넣을 수 있음 d = {'a':1, 'b':2, 'c':3} # 'a'가 인덱스임
-
-# Dataframe: 2차원(매트릭스) with label
-    행과 열 보두에 Label설정
-
-# 함수
-df1.columns
-df1.index
-df1.values
-df1.dtypes
-
-.haed(2)
-.tail(2)
-descri
-
-인덱스 지정
-df1.set_index('컬럼명')
-
-## 데이터 접근 및 선택
-# loc 예제
-
--- 컬럼(열) 선택 --
-df1['열이름'] # Sereis가 나온다
-df1[['이름', '점수']] # Dataframe이 나온다
-df1.나이
-
--- 행 선택 (인덱스 기준) --
-df1[:2] 맨앞 레코드 2개
-
--- loc와 iloc 메서드 --
-loc: 인덱스 이름
-iloc: 인덱스 정수 위치
-
-df3.loc['김철수'] -> 1행 가로
-df3.loc[['김철수', '이영희']] -> 2행 가로
-
--- row + col 조합으로 선택
-df3.loc[['김철수', '이영희'], ['나이', '점수']]
-
-# iloc 예제 (숫자인덱스)
-df1.iloc[0]
-df1.iloc[1:3]
-df1.iloc[[행번호], [컬럼번호]]
-df1.iloc[[0:1], [1:2]]
-
-# 불리언 인덱싱
-mask = (df1['나이] > 25) & (df1['성별'] == '여')
-
-isin 메서드
-names = ['김철수', '정지영']
-mask = df1['이름'].issin(name)
+# 7/31
+다양한 자료들: .xlsx, csv, json, web API..
+도서관 정보나루: https://www.data4library.kr/
