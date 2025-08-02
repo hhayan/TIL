@@ -93,4 +93,3 @@ argsort 정렬하기 위한 인덱스 배치
 
 # 7/31
 다양한 자료들: .xlsx, csv, json, web API..
-도서관 정보나루: https://www.data4library.kr/
