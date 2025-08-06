@@ -37,6 +37,11 @@ y축 단위 바꾸기 from matplotlib.ticher import FuncFormatter
 # 변화율 계산
 .pct_change(periods=7)
 
+# 리샘플링 (원하는 주기로 나누어준다) 사실상 그룹핑이라 집계함수(agg) 사용 가능
+.resample('W') <- 오프셋 별칭(Offset Alias) week
+.resample('ME') Month End
+.resample('QE') Quarter End
+
 *주의: 
 1. plot() 메서드 사용 시 단일값 불가 pandas series만 사용 가능!
 
@@ -48,3 +53,36 @@ Series의 .values를 사용하면 내부의 숫자 데이터만 깔끔하게 추
 
 #python
 예외 처리(에러 처리) try: except:
+
+[질문]
+# 이동평균 시각화
+plt.figure(figsize=(15, 8))
+plt.subplot(2, 2, 1)
+daily_sales[['sales', 'ma_7', 'ma_30']]는 daily_sales <=
+
+데이터프레임에서 'sales', 'ma_7', 'ma_30'라는 이름의 세 개 열을 선택하여, 이 세 열로만 구성된 새로운 데이터프레임을 만드는 작업
+
+------ 시각화 실습 ----------
+# 색칠하기: plt.fill_between()
+
+# 축 먼저 만들고, 종류가 다른 2개의 그래프 중첩(x축은 동일해야함)
+ax1.
+
+# 범례 결합
+line1, label1 = ax1.get_legend_handles_labels()
+
+# 수익률 분석
+pct_change(): 변화량
+
+# 이동평균
+rolling(window=window)
+
+# 모르는 부분
+ax = plt.gca()
+df[['close', 'ma_20']].plot(ax=ax)
+
+np.sqrt(252)
+
+# 수학.. 누적..
+(1 + df['returns'])
+df['returns']
