@@ -55,3 +55,7 @@ df.tail(12)['컬럼명'].mean
 시각화
 .sns.barplot(data= , x= , y=, hue='weight_type',ax=a2)
 .scatter
+
+-------------------------------
+실습
+계속 변수를 만들게 됌.. df 한군데에 결과값을 한 번에 보면 좋은데 이유는?
