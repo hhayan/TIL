@@ -1,3 +1,6 @@
+import pandas as pd
+from IPython.display import display
+
 def get_data_profile(df: pd.DataFrame):
     """종합적인 데이터 프로파일링 함수"""
 
@@ -21,7 +24,7 @@ def get_data_profile(df: pd.DataFrame):
     else:
         print('⚠️')
         missing_sum = pd.DataFrame({
-            '결축수': missing_info,
+            '결측수': missing_info,
             '결측율(%)': m_pct,
         }).round(2)
         missing_sum = missing_sum[missing_sum['결측수'] > 0]
