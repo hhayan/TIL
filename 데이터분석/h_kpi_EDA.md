@@ -64,7 +64,7 @@ df.tail(12)['컬럼명'].mean
 ## EDA 
 웹개발의 framework
 백엔드: python - flask..
-프론트엔드: JS - 리엑트, vue, aughlan...
+프론트엔드: JS - 리엑트, vue, aughlan..
 
 
 
