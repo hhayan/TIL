@@ -52,7 +52,6 @@ text, train 편차가 소숫점 3,4자리 정도 차이
 PolynomialFeatures: 모든 경우의 수를 만들어줌, 특성 증식
 
 # 규제(Regularization): 과대적합 방지
-
 - 훈련셋으로 스케일링 학습
 훈련 & 테스트 모두 훈련셋 기준으로 스케일링 진행
 
