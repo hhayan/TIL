@@ -182,5 +182,15 @@ X_val: X_train의 25%에 해당하는 데이터(전체 데이터의 20%)로, 하
 ? 과적합 확인방법: train score 높음, test score 낮음(답을 외우고, 시험볼 응용력이 없어보임)
 
 # 실습
+Competition 도전해보실분들
+https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data
+kaggle.comkaggle.com
+House Prices - Advanced Regression Techniques
+Predict sales prices and practice feature engineering, RFs, and gradient boosting
+3:03
+---
+그냥 복습은 기존에 Red-Wine Quality 를 새로운 모델들로 예측/분류
+
+- 실습 winequality
 여러 개 모델의 결과 값을 비교할 때 score, mean(score) 중 어떤 게 더 정확할까?
 K-Fold 교차 검증을 사용한다면, **평균 점수(mean(score))**를 보는 것이 훨씬 더 정확합니다.
