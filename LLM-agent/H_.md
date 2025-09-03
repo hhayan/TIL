@@ -48,3 +48,26 @@ llm = ChatOpenAI(model='gpt-4.1-nano', temperature=0)
 캐싱
 
 # 실제 gpt랑 대화하는 모습으로 만들기
+
+Competition 도전해보실분들
+https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data
+kaggle.comkaggle.com
+House Prices - Advanced Regression Techniques
+Predict sales prices and practice feature engineering, RFs, and gradient boosting
+그냥 복습은 기존에 Red-Wine Quality 를 새로운 모델들로 예측/분류 (편집됨) 
+
+# 05. 참고자료
+랭체인 튜토리얼
+https://python.langchain.com/docs/tutorials/
+
+프롬프트
+https://wikidocs.net/233351
+
+# 06.rag
+수업 참고 자료
+https://www.youtube.com/watch?v=wgfSDrqYMJ4
+
+# https://wikidocs.net/233780
+# 사전준비
+텍스트 분할: 하나의 청크(문서쪼개기) 당 몇 개의 토크가 필요한가 -> (벡터)숫자 바꾸기 -> 벡터스토어 저장
+
